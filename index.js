@@ -23,7 +23,7 @@ io.on("connection", (socket) => {
     controls.controlHorn(hornState)
   })
 });
-app.use(express.static('../frontend/build'))
+app.use(express.static('./build'))
 
 http.listen(3000, () => {
   console.log('listening on *:3000');
